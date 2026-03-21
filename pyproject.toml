@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "django-glass"
+version = "0.1.0"
+description = "Modern glassmorphism & AI themes for Django admin — add one line to INSTALLED_APPS"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "SC"}]
+requires-python = ">=3.10"
+dependencies = ["Django>=4.2"]
+classifiers = [
+    "Framework :: Django",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Topic :: Internet :: WWW/HTTP",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/shaochun/django-glass"
+Repository = "https://github.com/shaochun/django-glass"
+"Bug Tracker" = "https://github.com/shaochun/django-glass/issues"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-django", "coverage"]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+
+[tool.setuptools.packages.find]
+include = ["glass_admin*"]
+
+[tool.setuptools.package-data]
+glass_admin = [
+    "templates/**/*",
+    "static/**/*",
+]
