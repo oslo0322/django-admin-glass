@@ -1,11 +1,11 @@
-# django-admin-glass
+# django-glass
 
-[![PyPI version](https://img.shields.io/pypi/v/django-admin-glass.svg)](https://pypi.org/project/django-admin-glass/)
-[![Python versions](https://img.shields.io/pypi/pyversions/django-admin-glass.svg)](https://pypi.org/project/django-admin-glass/)
-[![Django versions](https://img.shields.io/pypi/djversions/django-admin-glass.svg)](https://pypi.org/project/django-admin-glass/)
+[![PyPI version](https://img.shields.io/pypi/v/django-glass.svg)](https://pypi.org/project/django-glass/)
+[![Python versions](https://img.shields.io/pypi/pyversions/django-glass.svg)](https://pypi.org/project/django-glass/)
+[![Django versions](https://img.shields.io/pypi/djversions/django-glass.svg)](https://pypi.org/project/django-glass/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-**django-admin-glass** is a production-ready Django admin theme package that brings modern glassmorphism and AI-inspired aesthetics to the Django admin interface — with zero template changes required.
+**django-glass** is a production-ready Django admin theme package that brings modern glassmorphism and AI-inspired aesthetics to the Django admin interface — with zero template changes required.
 
 ---
 
@@ -22,7 +22,7 @@
 ## Installation
 
 ```bash
-pip install django-admin-glass
+pip install django-glass
 ```
 
 ### Quick Start
@@ -111,7 +111,7 @@ The `glass_admin_tags` library is available for advanced customization:
 
 ## How It Works
 
-django-admin-glass uses Django's standard `APP_DIRS` template loading. By placing `glass_admin` before `django.contrib.admin` in `INSTALLED_APPS`, the package's `templates/admin/base_site.html` takes precedence and injects the theme CSS/JS into the admin's `{% block extrahead %}` — no modifications to your project's templates needed.
+django-glass uses Django's standard `APP_DIRS` template loading. By placing `glass_admin` before `django.contrib.admin` in `INSTALLED_APPS`, the package's `templates/admin/base_site.html` takes precedence and injects the theme CSS/JS into the admin's `{% block extrahead %}` — no modifications to your project's templates needed.
 
 ---
 
@@ -127,8 +127,8 @@ django-admin-glass uses Django's standard `APP_DIRS` template loading. By placin
 ## Development
 
 ```bash
-git clone https://github.com/shaochun/django-admin-glass
-cd django-admin-glass
+git clone https://github.com/shaochun/django-glass
+cd django-glass
 pip install -e ".[dev]"
 pytest tests/ -v
 ```

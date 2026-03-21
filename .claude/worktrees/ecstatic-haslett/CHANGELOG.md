@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to django-admin-glass will be documented in this file.
+All notable changes to django-glass will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -8,7 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2026-03-21
 
 ### Added
-- Initial release of django-admin-glass
+- Initial release of django-glass
 - **Liquid Glass theme**: Apple WWDC 2025-inspired glassmorphism with animated pastel gradient background, true glass effect, iridescent borders, and specular highlights
 - **AI Dark theme**: Deep space aesthetic with dark blue/purple background, dot-grid texture, glassmorphism cards, and electric blue accent glows
 - **Auto theme**: Automatically selects AI Dark on dark OS preference, Liquid Glass on light
