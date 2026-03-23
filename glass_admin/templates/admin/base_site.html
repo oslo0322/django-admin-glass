@@ -1,17 +1,16 @@
 {% extends "admin/base.html" %}
-{% load static glass_admin_tags %}
+{% load i18n static glass_admin_tags %}
 
-{% block extrahead %}
+{% block extrastyle %}
 {{ block.super }}
 {% glass_theme_css %}
-{% glass_js %}
-<meta name="glass-admin-theme" content="{% glass_theme_name %}">
 {% endblock %}
 
 {% block branding %}
-<h1 id="site-name">
-  <a href="{% url 'admin:index' %}">
-    {% if site_header %}{{ site_header }}{% else %}Django Administration{% endif %}
-  </a>
-</h1>
+<h1 id="site-name"><a href="{% url 'admin:index' %}">{{ site_header|default:_('Django administration') }}</a></h1>
+{% endblock %}
+
+{% block footer %}
+{{ block.super }}
+{% glass_js %}
 {% endblock %}
