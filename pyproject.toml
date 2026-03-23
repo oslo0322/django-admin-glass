@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-admin-glass"
-version = "0.1.0"
+version = "0.1.2"
 description = "Modern glassmorphism & AI themes for Django admin — add one line to INSTALLED_APPS"
 readme = "README.md"
 license = {text = "MIT"}
